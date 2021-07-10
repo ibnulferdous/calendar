@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 3% 5%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2vw;
+    margin: 0 0 2%;
+}
+
+.calendar-inner {
+    display: grid;
+    min-height: 68vh;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2.5%;
+}
+
+.calendar-inner > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.day-name {
+    background: rgba(219, 236, 241, 0.5);
+}
+
+.date:hover {
+    background: lightskyblue;
+    color: white;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+.other-month {
+    color: rgb(167, 167, 167);
+}
+
+.selected {
+    background: blue;
+    color: white;
+}
